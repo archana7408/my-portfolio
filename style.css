@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7ff;
+    color: #222;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #60a5fa;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+section {
+    padding: 45px 8%;
+    margin: 20px auto;
+}
+
+section h2 {
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px #00000012;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 6px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+/* Portfolio finishing design */
+
+body {
+    line-height: 1.7;
+    background: #f1f5f9;
+}
+
+body > img {
+    display: block;
+    margin: 30px auto 15px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #6366f1;
+    box-shadow: 0 5px 20px #00000020;
+}
+
+body > h1 {
+    text-align: center;
+    color: #4338ca;
+    margin: 10px 0;
+}
+
+body > h2 {
+    color: #4338ca;
+}
+
+body > p {
+    line-height: 1.8;
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    border: 1px solid #e2e8f0;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 5px;
+    background: #4338ca;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Card hover effect */
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Section spacing */
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+/* Navigation Bar */
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+/* Navigation on mobile */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
+.education-card {
+    background: #f4f7fb;
+    padding: 20px;
+    border-left: 5px solid #2575fc;
+}
+
+.education-card h3 {
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #f4f7fb;
+    border-radius: 12px;
+    border-left: 5px solid #2575fc;
+}
+
+.project-card h3 {
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.project-btn:hover {
+    background: #1d4ed8;
+}
+/* ✨ Attractive Portfolio Effects */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+/* Sections */
+section {
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37,117,252,0.12);
+}
+
+/* Headings */
+section h2 {
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #6a11cb;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+/* Skill hover */
+.skill {
+    transition: 0.3s;
+    cursor: default;
+}
+
+.skill:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(37,117,252,0.3);
+}
+
+/* Project cards */
+.project-card {
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(37,117,252,0.18);
+}
+
+/* Buttons */
+.project-btn,
+.btn {
+    transition: 0.3s;
+}
+
+.project-btn:hover,
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(37,117,252,0.3);
+}
+
+/* Education card */
+.education-card {
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(37,117,252,0.15);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav a {
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+}
+/* Academic Marks */
+
+#marks {
+    text-align: center;
+}
+
+.marks-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mark-card {
+    width: 220px;
+    padding: 25px 15px;
+    background: white;
+    border-radius: 18px;
+    border-top: 5px solid #2575fc;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.mark-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(37,117,252,0.20);
+}
+
+.mark-card h3 {
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+.mark-card p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.mark-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.mark-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(37,117,252,0.3);
+}
+
+
